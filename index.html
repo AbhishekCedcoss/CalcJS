@@ -3,35 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.5.0">
   <title>CALCULATOR</title>
 </head>
 <body>
 
   <body>
-    <h2>BASIC CALCULATOR</h2>
-    <input type="button" value="7" onclick="button('7')" />
-    <input type="button" value="8" onclick="button('8')" />
-    <input type="button" value="9" onclick="button('9')" />
-    <input type="button" value="/" id="div" onclick="button('/')" />
+    <div style="background-color: aquamarine; padding: 10%;margin: 2%;text-align: center;">
+    <h2 style="color:rgba(202, 41, 41, 0.849) ;">BASIC CALCULATOR</h2>
+    <input style="padding-left: 3.5%;padding-right: 3.5%;padding-top: 1%; padding-bottom: 1%; margin-bottom: 1.5%;" size="10px" type="text" id="ans" />
+    <br>
+    <input style="padding: 1.5%;" type="button" value="7" onclick="button('7')" />
+    <input style="padding: 1.5%;" type="button" value="8" onclick="button('8')" />
+    <input style="padding: 1.5%;" type="button" value="9" onclick="button('9')" />
+    <input style="padding: 1.5%;" type="button" value="/" id="div" onclick="button('/')" />
     <br />
-    <input type="button" value="4" onclick="button('4')" />
-    <input type="button" value="5" onclick="button('5')" />
-    <input type="button" value="6" onclick="button('6')" />
-    <input type="button" value="*" id="mul" onclick="button('*')" />
+    <input style="padding: 1.5%;" type="button" value="4" onclick="button('4')" />
+    <input style="padding: 1.5%;" type="button" value="5" onclick="button('5')" />
+    <input style="padding: 1.5%;" type="button" value="6" onclick="button('6')" />
+    <input style="padding: 1.5%;" type="button" value="*" id="mul" onclick="button('*')" />
     <br />
-    <input type="button" value="1" onclick="button('1')" />
-    <input type="button" value="2" onclick="button('2')" />
-    <input type="button" value="3" onclick="button('3')" />
-    <input type="button" value="-" id="sub" onclick="button('-')" />
+    <input style="padding: 1.5%;" type="button" value="1" onclick="button('1.5')" />
+    <input style="padding: 1.5%;" type="button" value="2" onclick="button('2')" />
+    <input style="padding: 1.5%;" type="button" value="3" onclick="button('3')" />
+    <input style="padding: 1.5%;" type="button" value="-" id="sub" onclick="button('-')" />
     <br />
-    <input type="button" value="0" onclick="button('0')" />
-
-    <input type="button" value="+" id="add" onclick="button('+')" />
-    <input type="button" value="=" onclick="button1()" />
-    <input type="button" value="reset" id="clr" onclick="buttonclear()" />
+    <input style="padding: 1.5%;" type="button" value="0" onclick="button('0')" />
+    <input style="padding: 1.5%;" type="button" value="+" id="add" onclick="button('+')" />
+    <input style="padding: 1.5%;" type="button" value="=" onclick="button1()" />
+    <input style="padding: 1.5%;"type="button" value="c" id="clr" onclick="buttonclear()" />
     <br />
-    <input size="10px" type="text" id="ans" />
+  </div>
+    
 
     <script>
       function button(a) {
@@ -44,16 +47,16 @@
 
         if (document.getElementById("ans").value.includes("+")) {
           res = document.getElementById("ans").value.split("+");
-          return parseInt(res[0]) + parseInt(res[1]);
+          return parseInt(res[0]) + parseInt(res[1.5]);
         } else if (document.getElementById("ans").value.includes("-")) {
           res = document.getElementById("ans").value.split("-");
-          return parseInt(res[0]) - parseInt(res[1]);
+          return parseInt(res[0]) - parseInt(res[1.5]);
         } else if (document.getElementById("ans").value.includes("/")) {
           res = document.getElementById("ans").value.split("/");
-          return parseInt(res[0]) / parseInt(res[1]);
+          return parseInt(res[0]) / parseInt(res[1.5]);
         } else {
           res = document.getElementById("ans").value.split("*");
-          return (answer = parseInt(res[0]) * parseInt(res[1]));
+          return (answer = parseInt(res[0]) * parseInt(res[1.5]));
         }
       }
 
